@@ -48,10 +48,6 @@
       animation:pop .6s cubic-bezier(.2,.9,.3,1.4) both, breathe 2.8s ease-in-out .6s infinite;}
     @keyframes pop{from{opacity:0;transform:scale(.7)}to{opacity:1;transform:scale(1)}}
     @keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
-    .core-fallback{width:200px;height:200px;border-radius:50%;display:flex;align-items:center;justify-content:center;
-      background:linear-gradient(135deg,#2f7d4f,#1f5132);box-shadow:0 0 0 3px #1f5132,0 12px 40px rgba(31,81,50,.3);
-      animation:breathe 2.8s ease-in-out infinite;}
-    .core-fallback svg{width:64px;height:64px;stroke:#e8d9a8;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;}
 
     .app-name{margin-top:26px;font-weight:800;font-size:32px;letter-spacing:.3px;color:#1f5132;font-style:italic;}
     .app-name .b{color:#b8860b;}
@@ -90,11 +86,7 @@
       <div class="logo-ring r1"></div>
       <div class="logo-ring r2"></div>
       <div class="logo-ring r3"></div>
-      <img class="logo-core" src="https://lh3.googleusercontent.com/d/1DTt3qCVJXuyd2Cl8ErQqlObqW-FXEyH1" alt="Amelia Restaurant"
-           onerror="this.style.display='none'; document.getElementById('core-fallback').style.display='flex';">
-      <div class="core-fallback" id="core-fallback" style="display:none;">
-        <svg viewBox="0 0 24 24"><path d="M3 2v7a3 3 0 0 0 6 0V2"/><path d="M6 9v13"/><path d="M16 2c-1.5 1-2.5 3-2.5 6 0 2 1 3 2.5 3s2.5-1 2.5-3c0-3-1-5-2.5-6z"/><path d="M16 11v11"/></svg>
-      </div>
+      <img class="logo-core" src="https://lh3.googleusercontent.com/d/1DTt3qCVJXuyd2Cl8ErQqlObqW-FXEyH1" alt="Amelia Restaurant">
     </div>
     <div class="app-name">Amel<span class="b">ia</span></div>
     <div class="app-sub">Inventory System</div>
