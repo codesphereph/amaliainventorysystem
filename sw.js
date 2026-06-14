@@ -1,6 +1,6 @@
 // Amelia Restaurant Inventory — Service Worker (app shell cache)
-const CACHE_NAME = 'amelia-inventory-v1';
-const ASSETS = ['./','./index.html','./manifest.json','./icon.png','./icon-192.png','./icon-512.png','./apple-touch-icon.png','./logo.png'];
+const CACHE_NAME = 'amelia-inventory-v2';
+const ASSETS = ['./','./index.html','./manifest.json','./icon.png','./icon-192.png','./icon-512.png','./apple-touch-icon.png'];
 
 self.addEventListener('install', function(event) {
   event.waitUntil(caches.open(CACHE_NAME).then(function(cache){ return cache.addAll(ASSETS); }));
